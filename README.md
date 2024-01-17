@@ -22,7 +22,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
+- Install/Enable IIS With CGI and Common HTTP Features - World Wide Web Services -> Application Development Features ->
+[X] CGI
+[X] Common HTTP Features
+<img width="517" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/77e751ef-f4a0-4d22-92e3-5f193c90b3f3">
+
+AND IIS Management Console
+Internet Information Services -> Web Management Tools -> IIS Management Console
+	[X] IIS Management Console
 - Item 2
 - Item 3
 - Item 4

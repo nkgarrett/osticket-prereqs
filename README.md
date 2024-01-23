@@ -51,13 +51,14 @@ CGI and Common HTTP Features
   - Typical Setup ->
   - Launch Configuration Wizard (after install) ->
   - Standard Configuration ->
+  - Take note of username: root
   - Example Password: Password1
 
 8. Open IIS as an Admin
 
 9. Register PHP from within IIS
 
-10. Reload IIS (Open IIS, Stop and Star the server)
+10. Reload IIS (Open IIS, Stop and Start the server)
   - Download/Install osTicket
   - Extract and copy “upload” folder to c:\inetpub\wwwroot
   - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
@@ -81,24 +82,30 @@ CGI and Common HTTP Features
   - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 16. Assign Permissions: ost-config.php
-  - Disable inheritance -> Remove All
-  - New Permissions -> Everyone -> All
+    - Right click ost-config.php
+    - Click security -> Advanced settings
+    - Disable inheritance -> Remove All
+    - Click Select a principal
+    - New Permissions -> Everyone -> All
+    - Apply -> Ok
 
 17. Download and install HeidiSQL
-  - Open Heidi SQL
-  - Create a new session, root/Password1
-  - Connect to the session
-- Create a database called “osTicket”
+    - Open Heidi SQL
+    - Create a new session, root/Password1
+    - Connect to the session
+    - Right click and create a database called “osTicket”
 
-Continue Setting up osticket in the browser
- - MySQL Database: osTicket
- - MySQL Username: root
- - MySQL Ex. Password: Password1
- - Click “Install Now!”
+18. Continue Setting up osticket in the browser
+   - MySQL Database: osTicket
+   - MySQL Username: root
+   - MySQL Ex. Password: Password1
+   - Click “Install Now!”
 
-Clean up
- - Delete: C:\inetpub\wwwroot\osTicket\setup
- - Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+19. Congratulations! osTicket should be installed without any errors.
+
+20. Clean up
+   - Delete: C:\inetpub\wwwroot\osTicket\setup
+   - Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 
 <h2>Installation Steps</h2>
@@ -116,28 +123,52 @@ CGI and Common HTTP Features
 
 
 
-<img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/6eac08b3-39eb-488e-a86d-4e9f27218738">
+	<img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/6eac08b3-39eb-488e-a86d-4e9f27218738">
 	 
 AND IIS Management Console
   - Internet Information Services -> Web Management Tools -> IIS Management Console
 	- [X] IIS Management Console
-<img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/12e8a8cc-cb9e-43b0-8156-af50bee10b8e">
+	<img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/12e8a8cc-cb9e-43b0-8156-af50bee10b8e">
 
-<p>
+
 4. Create the directory C:\PHP
 	<img width="465" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/f21d6cf5-7e4c-414f-9cf5-565ccbf3a7ec">
 
 
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+5. Download/Install PHP 7.3.8 and Unzip contents into C:\PHP
+	<img width="569" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/7af6fae8-cb43-4d5a-82e7-dfb5179794a5">
+
+8. Open IIS as an Admin. Click start menu, search IIS and right click it to "run as administrator"
+
+	 <img width="320" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/fee3bb64-4a61-4466-a648-93fdc1f4da77">
+
+9. Register PHP from within IIS
+   - Go to PHP Manager
+   - Click Register new PHP version
+   <img width="508" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/19e9868f-7e6c-46a5-b318-71f0d190c444">
+
+13. Enable extensions that are off
+    <p>Before: </p>
+    <img width="508" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/f8846350-35bf-446a-b3a1-9adb7791e2d4"> 
+   
+14. Refresh the osTicket site to view updates
+
+    <p>After: </p>
+    <img width="508" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/56a6610d-cd34-4cda-a02f-491682a02b4b">
+ 
+19. Congratulations! osTicket should be installed without any errors.
+    <img width="577" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/e48f4c1d-d123-4d8f-a25b-8780333e181b">
+
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
 <br />

@@ -32,7 +32,7 @@ CGI and Common HTTP Features
   - World Wide Web Services -> Application Development Features ->
   [X] CGI
   [X] Common HTTP Features
-
+<br>
   AND IIS Management Console
   - Internet Information Services -> Web Management Tools -> IIS Management Console
   [X] IIS Management Console
@@ -59,43 +59,43 @@ CGI and Common HTTP Features
 9. Register PHP from within IIS
 
 10. Reload IIS (Open IIS, Stop and Start the server)
-  - Download/Install osTicket
-  - Extract and copy “upload” folder to c:\inetpub\wwwroot
-  - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
+   - Download/Install osTicket
+   - Extract and copy “upload” folder to c:\inetpub\wwwroot
+   - Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”
 
 11. Reload IIS (Open IIS, Stop and Start the server)
 
 12. Go to sites -> Default -> osTicket
-  - Click "Browse *.80" on the right
+   - Click "Browse *.80" on the right
 
 13. Enable extensions that are off
-  - Go back to IIS, sites -> Default -> osTicket
-  - Double-click PHP Manager
-  - Click “Enable or disable an extension”
+   - Go back to IIS, sites -> Default -> osTicket
+   - Double-click PHP Manager
+   - Click “Enable or disable an extension”
 	- Enable: php_imap.dll
 	- Enable: php_intl.dll
 	- Enable: php_opcache.dll
 14. Refresh the osTicket site to view updates
 
 15. Rename: ostsample-config.php to ost-config.php
-  - From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
-  - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+   - From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+   - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 
 16. Assign Permissions: ost-config.php
-    - Right click ost-config.php
-    - Click security -> Advanced settings
-    - Disable inheritance -> Remove All
-    - Click Select a principal
-    - New Permissions -> Everyone -> All
-    - Apply -> Ok
+   - Right click ost-config.php
+   - Click security -> Advanced settings
+   - Disable inheritance -> Remove All
+   - Click Select a principal
+   - New Permissions -> Everyone -> All
+   - Apply -> Ok
 
 17. Download and install HeidiSQL
-    - Open Heidi SQL
-    - Create a new session, root/Password1
-    - Connect to the session
-    - Right click and create a database called “osTicket”
+- Open Heidi SQL
+- Create a new session, root/Password1
+- Connect to the session
+- Right click and create a database called “osTicket”
 
-18. Continue Setting up osticket in the browser
+19. Continue Setting up osticket in the browser
    - MySQL Database: osTicket
    - MySQL Username: root
    - MySQL Ex. Password: Password1
@@ -113,54 +113,73 @@ CGI and Common HTTP Features
 Below are a few visual steps to help assist with installation.
 
 
-
+<p>
 1. Open control panel, click programs then "Turn Windows features on or off" Follow directions for step one. 
 Install / Enable IIS in Windows WITH
 CGI and Common HTTP Features
   - World Wide Web Services -> Application Development Features ->
    	- [X] CGI
   	- [X] Common HTTP Features
+</p>
 
 
+  <img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/6eac08b3-39eb-488e-a86d-4e9f27218738">
 
-	<img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/6eac08b3-39eb-488e-a86d-4e9f27218738">
-	 
-AND IIS Management Console
+
+<p>	 
+  AND IIS Management Console
   - Internet Information Services -> Web Management Tools -> IIS Management Console
 	- [X] IIS Management Console
-	<img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/12e8a8cc-cb9e-43b0-8156-af50bee10b8e">
-
-
+</p>
+<img width="376" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/12e8a8cc-cb9e-43b0-8156-af50bee10b8e">
+<br>
+<br>
+<p>
 4. Create the directory C:\PHP
-	<img width="465" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/f21d6cf5-7e4c-414f-9cf5-565ccbf3a7ec">
-
-
-
-
+</p>	
+ 	<img width="465" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/f21d6cf5-7e4c-414f-9cf5-565ccbf3a7ec">
+<br>
+<br>
+<p>
 5. Download/Install PHP 7.3.8 and Unzip contents into C:\PHP
+</p>	
 	<img width="569" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/7af6fae8-cb43-4d5a-82e7-dfb5179794a5">
-
+ <br>
+ <br>
+<p>
 8. Open IIS as an Admin. Click start menu, search IIS and right click it to "run as administrator"
-
+</p>
 	 <img width="320" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/fee3bb64-4a61-4466-a648-93fdc1f4da77">
-
+  <br>
+  <br>
+<p>
 9. Register PHP from within IIS
    - Go to PHP Manager
    - Click Register new PHP version
+</p>	
    <img width="508" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/19e9868f-7e6c-46a5-b318-71f0d190c444">
-
+<br>
+<br>
+<p>
 13. Enable extensions that are off
+</p>	
     <p>Before: </p>
     <img width="508" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/f8846350-35bf-446a-b3a1-9adb7791e2d4"> 
-   
+<br>
+<br>
+<p>   
 14. Refresh the osTicket site to view updates
-
+</p>
     <p>After: </p>
     <img width="508" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/56a6610d-cd34-4cda-a02f-491682a02b4b">
- 
-19. Congratulations! osTicket should be installed without any errors.
+ <br>
+ <br>
+ <p>
+ 19. Congratulations! osTicket should be installed without any errors.
+<br>
+<br>
     <img width="577" alt="image" src="https://github.com/nkgarrett/osticket-prereqs/assets/156832893/e48f4c1d-d123-4d8f-a25b-8780333e181b">
-
+ </p>
 
 </p>
 <br />
